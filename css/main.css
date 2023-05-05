@@ -983,8 +983,8 @@ header .container nav .form i:hover {
     display: block;
     width: 100%;
     border: #777 1px solid;
-    margin-bottom: 20px;
-    max-width: 100%;
+    max-width: 95%;
+    margin: 0 auto 20px;
 }
 .contact .content form textarea {
     padding-top: 10px;
@@ -1001,6 +1001,7 @@ header .container nav .form i:hover {
     display: flex;
     cursor: pointer;
     color: white;
+    margin-right: 8px;
 } 
 .contact .content .info {
     width: 25%;
