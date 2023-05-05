@@ -6,24 +6,29 @@
 }
 /* end varibels*/
 /* Start combonent*/
-h3.speciel-heading {
+div.speciel-heading {
+    text-align: center;
+}
+div.speciel-heading h3 {
     font-size: 40px;
     margin: 20px 0 30px;
     font-weight: 500;
     position: relative;
+    margin-bottom: 35px;
     padding-bottom: 35px;
     text-align: center;
 }
-h3.speciel-heading::before {
+div.speciel-heading h3::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 120px;
     background-color: #333;
-    height: 1px;
-    left: calc(50% - 60px);
+    height: 2px;
+    left:50% ;
+    transform: translatex(-50%);
 }
-h3.speciel-heading::after {
+div.speciel-heading h3::after {
     content: '';
     position: absolute;
     width: 15px;
@@ -32,15 +37,17 @@ h3.speciel-heading::after {
     background-color: white;
     bottom: -7px;
     left: 50%;
-    transform: rotateX(-50%);
-    border: 1px solid #333;
-    left: calc(50% - 8px);
+    transform: translatex(-50%);
+    border: 2px solid #333;
+    left: 50% ;
 }
-h3.speciel-heading + p {
-    text-align: center;
+div.speciel-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
     line-height: 2;
-    color: #a2a2a2;
-    font-size: 14px;
+    max-width:100%;
+    color: #777;
+    font-size: 15px;
 }
 
 /* End combonent*/
@@ -319,7 +326,7 @@ header .container nav .form i:hover {
 .services .container .cnt-srv {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 60px;
 }
 .services .container .cnt-srv .srv {
@@ -345,6 +352,7 @@ header .container nav .form i:hover {
     color: var(--main-color);
     font-weight: 600;
     font-size: 22px;
+
 }
 .services .container .cnt-srv .srv .txt p {
     line-height: 2;
@@ -352,7 +360,8 @@ header .container nav .form i:hover {
 }
 @media (max-width:767px) {
     .services .container .cnt-srv .srv .txt p {
-        font-size: 14px;
+        font-size: 12px;
+        max-width: 100%;
     }
 }
 .services .container .cnt-srv .srv i {
@@ -432,10 +441,15 @@ header .container nav .form i:hover {
 .portfolio .container ul {
     display:flex ;
     justify-content: center;
-    margin: 40px 0 30px;
+    margin: 40px 2px 30px;
 }
 .portfolio .container ul li {
     padding: 15px 25px;
+}
+@media (max-width:768px) {
+    .portfolio .container ul li {
+        padding: 15px 18px;
+    }
 }
 .portfolio .container ul li.active {
     background-color: var(--main-color);
@@ -1068,7 +1082,7 @@ header .container nav .form i:hover {
     justify-content: space-between;
     width: 150px;
     margin: 30px auto 60px;
-
+    max-width: 100%;
 }
 .footer .container div i {
     font-size: 17px;
